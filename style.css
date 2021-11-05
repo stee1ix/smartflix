@@ -5,12 +5,11 @@
 }
 
 body {
-	background: #000;
 	width: 100%;
 	height: 100vh;
 }
 
-#logo {
+#intro-logo {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -18,47 +17,47 @@ body {
 	animation: fill 0.5s ease forwards 3.8s;
 }
 
-#logo path:nth-child(1) {
+#intro-logo path:nth-child(1) {
 	stroke-dasharray: 590.8433227539062;
 	stroke-dashoffset: 590.8433227539062;
 	animation: lineanimation 2s ease forwards;
 }
-#logo path:nth-child(2) {
+#intro-logo path:nth-child(2) {
 	stroke-dasharray: 623.0095825195312;
 	stroke-dashoffset: 623.0095825195312;
 	animation: lineanimation 2s ease forwards 0.2s;
 }
-#logo path:nth-child(3) {
+#intro-logo path:nth-child(3) {
 	stroke-dasharray: 463.7666931152344;
 	stroke-dashoffset: 463.7666931152344;
 	animation: lineanimation 2s ease forwards 0.4s;
 }
-#logo path:nth-child(4) {
+#intro-logo path:nth-child(4) {
 	stroke-dasharray: 267.4963684082031;
 	stroke-dashoffset: 267.4963684082031;
 	animation: lineanimation 2s ease forwards 0.6s;
 }
-#logo path:nth-child(5) {
+#intro-logo path:nth-child(5) {
 	stroke-dasharray: 319.24542236328125;
 	stroke-dashoffset: 319.24542236328125;
 	animation: lineanimation 2s ease forwards 0.8s;
 }
-#logo path:nth-child(6) {
+#intro-logo path:nth-child(6) {
 	stroke-dasharray: 480.213134765625;
 	stroke-dashoffset: 480.213134765625;
 	animation: lineanimation 2s ease forwards 1s;
 }
-#logo path:nth-child(7) {
+#intro-logo path:nth-child(7) {
 	stroke-dasharray: 273.3892822265625;
 	stroke-dashoffset: 273.3892822265625;
 	animation: lineanimation 2s ease forwards 1.2s;
 }
-#logo path:nth-child(8) {
+#intro-logo path:nth-child(8) {
 	stroke-dasharray: 244.4287567138672;
 	stroke-dashoffset: 244.4287567138672;
 	animation: lineanimation 2s ease forwards 1.4s;
 }
-#logo path:nth-child(9) {
+#intro-logo path:nth-child(9) {
 	stroke-dasharray: 389.03997802734375;
 	stroke-dashoffset: 389.03997802734375;
 	animation: lineanimation 2s ease forwards 1.6s;
@@ -76,4 +75,63 @@ body {
 	to {
 		fill: #fff;
 	}
+}
+
+.landing {
+	min-height: 100vh;
+	background: blue;
+	padding: 0rem 5rem;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 10vh;
+}
+
+#logo {
+	font-family: cursive;
+	font-size: 2rem;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+}
+
+.nav-links li {
+	padding-left: 10rem;
+	font-size: 1.2rem;
+}
+
+.big-text {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-family: cursive;
+	font-size: 5rem;
+}
+
+.intro {
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider {
+	background: rgb(112, 112, 112);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
 }
