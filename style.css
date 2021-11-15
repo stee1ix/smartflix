@@ -9,6 +9,10 @@ body {
 	height: 100vh;
 }
 
+a {
+	color: transparent;
+}
+
 #intro-logo {
 	position: absolute;
 	top: 50%;
@@ -77,43 +81,6 @@ body {
 	}
 }
 
-.landing {
-	min-height: 100vh;
-	background: blue;
-	padding: 0rem 5rem;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	min-height: 10vh;
-}
-
-#logo {
-	font-family: cursive;
-	font-size: 2rem;
-}
-
-.nav-links {
-	display: flex;
-	list-style: none;
-}
-
-.nav-links li {
-	padding-left: 10rem;
-	font-size: 1.2rem;
-}
-
-.big-text {
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -30%);
-	font-family: cursive;
-	font-size: 5rem;
-}
-
 .intro {
 	background: #000;
 	position: fixed;
@@ -127,11 +94,250 @@ nav {
 }
 
 .slider {
-	background: rgb(112, 112, 112);
+	background: rgb(255, 255, 255);
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	transform: translateY(100%);
+}
+
+main {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+section {
+	scroll-snap-align: start;
+}
+
+.landing {
+	position: relative;
+	height: 100vh;
+	background-color: #000;
+	background-image: url('./assets/batman.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 10vh;
+	padding: 0rem 9rem;
+}
+
+nav img {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 1rem;
+}
+
+#logo {
+	font-family: 'Baumans', cursive;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	margin-left: -17rem;
+}
+
+.nav-links li {
+	padding-left: 10rem;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	cursor: pointer;
+}
+
+.big-text-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(-10%, -50%);
+}
+
+.big-text {
+	font-family: 'Baumans', cursive;
+	font-size: 7rem;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+.watch {
+	background-color: rgb(236, 221, 9);
+	width: 15rem;
+	height: 3.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5rem;
+	box-shadow: 6px 4px 27px -16px rgba(255, 255, 255, 0.75);
+	-webkit-box-shadow: 6px 4px 27px -16px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow: 6px 4px 27px -16px rgba(255, 255, 255, 0.75);
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.watch:hover {
+	transform: scale(1.1);
+}
+
+.watch h3 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+.release {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-weight: lighter;
+	font-size: 1.1rem;
+	margin-top: 3rem;
+	line-height: 2rem;
+}
+
+.release h3:nth-child(2) {
+	color: rgb(236, 221, 9);
+}
+
+.gallery {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	background-image: url('./assets/avengers.png');
+	background-repeat: no-repeat;
+}
+
+.header {
+	width: 48%;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	margin-bottom: 3rem;
+}
+
+.header h1 {
+	font-family: 'Baumans', cursive;
+	color: #fff;
+}
+
+.grid {
+	width: 60%;
+	margin-left: 14rem;
+}
+
+.grid img {
+	width: 10rem;
+	height: 15rem;
+	margin: 0 2rem 2rem 0;
+	transition: all 0.3s;
+}
+
+.grid img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.grid img:nth-child(5) {
+	margin: 0 0 2rem 0;
+}
+
+.grid img:nth-child(6) {
+	margin: 0 2rem 2rem 8rem;
+}
+
+.footer {
+	height: 100vh;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer h2 {
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-family: 'Baumans', cursive;
+}
+
+.footer h1 {
+	font-size: 1.8rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.icons {
+	margin-bottom: 2rem;
+}
+
+#batman {
+	z-index: -1;
+	opacity: 0;
+}
+
+#desp {
+	z-index: -1;
+	opacity: 0;
+}
+#doraemon {
+	z-index: -1;
+	opacity: 0;
+}
+#interstellar {
+	z-index: -1;
+	opacity: 0;
+}
+#msec {
+	z-index: -1;
+	opacity: 0;
+}
+#ronaldo {
+	z-index: -1;
+	opacity: 0;
+}
+#suits {
+	z-index: -1;
+	opacity: 0;
+}
+#ucl {
+	z-index: -1;
+	opacity: 0;
+}
+#tot {
+	z-index: -1;
+	opacity: 0;
+}
+#mancity {
+	z-index: -1;
+	opacity: 0;
+}
+
+.view {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
 }
