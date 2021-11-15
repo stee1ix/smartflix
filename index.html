@@ -31,8 +31,7 @@
                         <li>ABOUT</li>
                     </a>
                 </ul>
-
-                <img src="./assets/profile.jpg" alt="profile image">
+                <img onclick="showLogin()" src="./assets/profile.jpg" alt="profile image" style="cursor: pointer;">
             </nav>
             <div class="big-text-wrapper">
                 <h2 class="big-text">BATMAN</h2>
@@ -42,6 +41,20 @@
                 <div class="release">
                     <h3>In theaters</h3>
                     <h3>15 Dec, 2021 (INDIA)</h3>
+                </div>
+            </div>
+            <div class="login">
+                <img id="login-close" onclick="closeLogin()"
+                    src="https://img.icons8.com/ios/80/ffffff/delete-sign--v1.png"
+                    style="position: absolute; top: 0;right: 0;margin: 2rem 7rem;cursor: pointer;pointer-events: all;" />
+                <div class="container">
+                    <h1>SmartFlix</h1>
+                    <h2>Sign Up Now!</h2>
+                    <div class="input-container">
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" />
+                        <input type="password" name="password" id="password" placeholder="**********" />
+                    </div>
+                    <button onclick="closeLogin()" type="submit">SIGN UP</button>
                 </div>
             </div>
         </section>
@@ -76,8 +89,9 @@
             <h1>Made with <span style="color: red;"> &#9829;</span> by Rituraj</h1>
 
         </section>
+
     </main>
-    <div class="intro">
+    <!-- <div class="intro">
         <svg id="intro-logo" width="737" height="125" viewBox="0 0 737 125" fill="none"
             xmlns="http://www.w3.org/2000/svg">
 
@@ -110,7 +124,7 @@
                 stroke="white" stroke-width="4" />
         </svg>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
         integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
