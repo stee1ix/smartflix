@@ -290,48 +290,6 @@ nav img {
 	margin-bottom: 2rem;
 }
 
-#batman {
-	z-index: -1;
-	opacity: 0;
-}
-
-#desp {
-	z-index: -1;
-	opacity: 0;
-}
-#doraemon {
-	z-index: -1;
-	opacity: 0;
-}
-#interstellar {
-	z-index: -1;
-	opacity: 0;
-}
-#msec {
-	z-index: -1;
-	opacity: 0;
-}
-#ronaldo {
-	z-index: -1;
-	opacity: 0;
-}
-#suits {
-	z-index: -1;
-	opacity: 0;
-}
-#ucl {
-	z-index: -1;
-	opacity: 0;
-}
-#tot {
-	z-index: -1;
-	opacity: 0;
-}
-#mancity {
-	z-index: -1;
-	opacity: 0;
-}
-
 .view {
 	position: absolute;
 	height: 100%;
